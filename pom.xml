@@ -14,9 +14,26 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+  
   </dependencies>
   <build>
     <finalName>java-hello-world</finalName>
+    
+    <plugins>
+      <plugin>  
+        <groupId>org.apache.maven.plugins</groupId>  
+	      <artifactId>maven-war-plugin</artifactId>  
+	      <version>3.6.3</version>  
+	      <configuration>  
+	        <webResources>  
+	            <resource>  
+	                <directory>WebContent</directory>  
+	            </resource>  
+	        </webResources>  
+	      </configuration>  
+	    </plugin>
+    </plugins>
+  
   </build>
 </project>
 

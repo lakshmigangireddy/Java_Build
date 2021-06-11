@@ -17,12 +17,13 @@
   </dependencies>
   <build>
     <finalName>java-hello-world</finalName>
-    
-    <plugin>
-      <groupId>org.apache.maven.plugins</groupId>
-      <artifactId>maven-war-plugin</artifactId>
-      <version>3.6.3</version>
-    </plugin>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>3.6.3</version>
+      </plugin>
+    </plugins>
     
   </build>
 </project>
